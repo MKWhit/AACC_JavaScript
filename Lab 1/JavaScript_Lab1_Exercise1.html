@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<title>Dog Years</title>
+<body>
+
+Click the button to calculate your age in dog years.
+
+<button onclick="age_conversion()">Click Here</button>
+
+<script type="text/javascript">
+function age_conversion()
+{
+	var human_age = prompt("Type in your years of age", "26");
+	if (human_age != null)
+	{
+	document.write("You are "+human_age+" in human years");
+	var dog_age = 7*human_age;
+	document.write(" and you are "+dog_age+" in dog years.")
+	}
+}
+
+</script>
+
+</body>
+</html>
