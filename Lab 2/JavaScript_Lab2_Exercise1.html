@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<title>Dog Years Are Short</title>
+<body>
+
+Ya gotta press the little button.
+
+<button onclick="after_press()">Click Here</button>
+
+<script type="text/javascript">
+
+window.age = 99;
+window.dog_age = 1;
+
+function get_age()
+{
+   age = prompt("Type in your years of age", "26");
+   if (age != null)
+   {
+   document.write("You are "+age+" solar years old.<br/>");
+   return age;
+   }
+}
+
+function age_conversion()
+{
+	dog_age = (7*age);
+   return dog_age;
+}
+
+function after_press()
+{
+   get_age();
+   document.write("One solar year is equal to one human year.<br/><br/>");
+   
+   age_conversion();
+   document.write("Right now you are "+age+" human years old, but "+dog_age+"  dog years old.<br/>");
+   
+   age =+ age+7;
+   age_conversion(age);
+   document.write("In seven years, you will be "+age+" human years old, and "+dog_age+"  dog years old.<br/>");
+   
+   age =+ age+14;
+   age_conversion(age);
+   document.write("In fourteen years, you will be "+age+" human years old, and "+dog_age+"  dog years old.<br/>");
+}
+</script>
+
+</body>
+</html>

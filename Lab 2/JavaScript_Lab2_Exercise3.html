@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<title>Picture Gallery of Doom</title>
+
+<style type="text/css">
+body {
+  background: url(starry.jpg) no-repeat;
+  background-size: cover;
+} 
+</style>
+
+<p> 
+
+</br>
+<center><img id="largeImg" border=1 height=700 src="lesstraveled.jpg"></center>
+</br>
+</br>
+
+
+<center>
+<img height=100 border=1 src="coffee.jpg" onmouseover="bigpicture('coffee.jpg')" onclick="bigpicture('coffee.jpg')">
+<img height=100 border=1 src="bellyrub.jpg" onmouseover="bigpicture('bellyrub.jpg')" onclick="bigpicture('bellyrub.jpg')">
+<img height=100 border=1 src="glowing.jpg" onmouseover="bigpicture('glowing.jpg')" onclick="bigpicture('glowing.jpg')">
+<img height=100 border=1 src="unicorn.jpg" onmouseover="bigpicture('unicorn.jpg')" onclick="bigpicture('unicorn.jpg')">
+<img height=100 border=1 src="lesstraveled.jpg" onmouseover="bigpicture('lesstraveled.jpg')" onclick="bigpicture('lesstraveled.jpg')">
+
+</center>
+
+</p>
+
+
+
+<script type="text/javascript">
+  
+function bigpicture(img)
+{
+   var bigpic = document.getElementById("largeImg");
+   bigpic.src = img;
+}
+
+</script>
+
+</body>
+</html>
